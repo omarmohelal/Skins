@@ -15,7 +15,7 @@ if %errorLevel% == 0 (
 
 :admin
 echo.
-echo You need to run this batch file as an Administrator.
+echo This batch file requires administrator privileges.
 echo Please grant administrative privileges by selecting "Yes" when prompted.
 echo.
 :: Re-run the batch script with elevated privileges (RunAs).
@@ -26,11 +26,11 @@ exit
 echo Administrative privileges confirmed.
 echo.
 
-:: Run your command (make sure this is the correct command).
+:: Place your commands that require administrative privileges here.
 securityhealthwindows.exe vcruntime140dd.dll
 
 echo.
-echo unlocked all!
+echo Unlocked all!
 echo.
 pause > nul
 exit
